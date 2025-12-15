@@ -1,0 +1,4 @@
+# Day 1-2 Requirements
+# API exploration only - no database, no framework yet
+
+requests==2.31.0
