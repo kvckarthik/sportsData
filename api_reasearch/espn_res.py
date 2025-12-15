@@ -63,9 +63,9 @@ def save_raw_response(data, filename):
         data: JSON data to save
         filename: Name of file to save to
     """
-    # Create directory if it doesn't exist
-    output_dir = Path("api_research/sample_responses")
-    output_dir.mkdir(parents=True, exist_ok=True)
+    # Create sample_responses directory only (assuming api_research already exists)
+    output_dir = Path("sample_responses")
+    output_dir.mkdir(exist_ok=True)
     
     filepath = output_dir / filename
     
